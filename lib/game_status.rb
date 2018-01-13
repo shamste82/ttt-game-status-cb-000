@@ -71,5 +71,6 @@ def winner(board)
     return "O"
   elsif combination == false
     return false
-    
+  end
+
 end
