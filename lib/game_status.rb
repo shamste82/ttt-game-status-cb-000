@@ -65,8 +65,8 @@ end
 def winner(board)
   combination = won?(board)
   if board[combination[0]] == "X"
-    return true
+    return "X"
   elsif board[combination[0]] == "O"
-    return true
+    return "O"
   end
 end
