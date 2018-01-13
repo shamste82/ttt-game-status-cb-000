@@ -69,4 +69,5 @@ def winner(board)
   elsif board[combination[0]] == "O" && board[combination[1]] == "O" && board[combination[2]] == "O"
     return "O"
   end
+  return
 end
