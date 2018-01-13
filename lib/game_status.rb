@@ -65,12 +65,13 @@ end
 def winner(board)
   combination = won?(board)
   print combination
+  if !combination
+    return false
+  end
   if board[combination[0]] == "X" && board[combination[1]] == "X" && board[combination[2]] == "X"
     return "X"
   elsif board[combination[0]] == "O" && board[combination[1]] == "O" && board[combination[2]] == "O"
     return "O"
-  elsif !combination
-    return nil
   end
 
 end
