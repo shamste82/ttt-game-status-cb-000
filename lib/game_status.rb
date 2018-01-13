@@ -64,7 +64,6 @@ end
 
 def winner(board)
   combination = won?(board)
-  print combination
   if !combination
     return nil
   end
